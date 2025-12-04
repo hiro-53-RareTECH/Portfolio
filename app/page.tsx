@@ -1,65 +1,100 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="flex flex-col items-center h-screen p-4">
+      <div className="space-y-4 w-full max-w-md">
+        <motion.h1
+          className="text-center text-4xl"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          Hi, I'm Hiro! <br /> Welcome to my portfolio!
+        </motion.h1>
+        <div className="flex space-x-8 items-center">
+          <Image
+            className="rounded-full"
+            src="/profile-icon.png"
+            alt="プロフィール画像"
+            width={150}
+            height={150}
+          />
+          <div className="bg-gray-800 rounded-xl w-full px-4 py-2 text-left border-1 border-gray-600 space-y-2">
+            <h2 className="text-2xl underline underline-offset-4">Hiro</h2>
+            <p>
+              クラウドエンジニア、バックエンドエンジニアを目指して、IT学習に励んでおります！
+            </p>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="bg-gray-800 rounded-xl px-4 py-2 text-left border-1 border-gray-600 space-y-2">
+          <h3 className="text-xl font-bold underline underline-offset-4">IT</h3>
+          <div className="flex space-x-4">
+            <Link
+              className="flex space-x-2"
+              href="https://github.com/hiro-53-RareTECH"
+            >
+              <Image
+                src="/github-mark-white.png"
+                alt="GitHubアイコン画像"
+                width={20}
+                height={20}
+              />
+              <p className="hover:underline">GitHub</p>
+            </Link>
+            <Link className="flex space-x-2" href="https://qiita.com/hiro_53">
+              <Image
+                src="/qiita-icon.png"
+                alt="Qiitaアイコン画像"
+                width={20}
+                height={20}
+              />
+              <p className="hover:underline">Qiita</p>
+            </Link>
+          </div>
         </div>
-      </main>
+        <div className="bg-gray-800 rounded-xl px-4 py-2 text-left border-1 border-gray-600 space-y-2">
+          <h3 className="text-xl font-bold underline underline-offset-4">
+            Hobby
+          </h3>
+          <div className="flex space-x-4">
+            <Link
+              className="hover:underline"
+              href="https://bookmeter.com/users/1629490/books/read"
+            >
+              <p>📚読書メーター</p>
+            </Link>
+            <Link
+              className="hover:underline"
+              href="https://annict.com/@hiro_abc/watched"
+            >
+              <p>🎞️Annict</p>
+            </Link>
+          </div>
+        </div>
+        {/* <div className="bg-gray-800 rounded-xl px-4 py-2 text-left border-1 border-gray-600 space-y-2">
+          <h3 className="text-xl font-bold">Skills</h3>
+          <div className="flex space-x-4">
+            <Image src="https://skillicons.dev/icons?theme=dark&perline=7&i=html,css,js,ts,react,next,figma,python,docker,aws,django,flask" alt="my skills" width={100} height={100}/>
+
+            <Link
+              className="hover:underline"
+              href="https://bookmeter.com/users/1629490/books/read"
+            >
+              <p>📚読書メーター</p>
+            </Link>
+            <Link
+              className="hover:underline"
+              href="https://annict.com/@hiro_abc/watched"
+            >
+              <p>🎞️Annict</p>
+            </Link>
+          </div>
+        </div> */}
+      </div>
     </div>
   );
 }
