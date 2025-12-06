@@ -23,14 +23,16 @@ export default function Home() {
           height={150}
         />
         <div className="bg-gray-800 rounded-xl w-full px-4 py-2 text-left border-1 border-gray-600 space-y-2">
-          <h2 className="text-2xl underline underline-offset-4">Hiro</h2>
+          <h2 className="text-xl font-bold text-left underline underline-offset-4">
+            Hiro
+          </h2>
           <p>
             クラウドエンジニア、バックエンドエンジニアを目指して、IT学習に励んでおります！
           </p>
         </div>
       </div>
       <div className="bg-gray-800 rounded-xl px-4 py-2 text-left border-1 border-gray-600 space-y-2">
-        <h3 className="text-xl font-bold underline underline-offset-4">IT</h3>
+        <h3 className="text-xl font-bold text-left underline underline-offset-4">IT</h3>
         <div className="flex space-x-4">
           <Link
             className="flex space-x-2"
@@ -56,7 +58,7 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-gray-800 rounded-xl px-4 py-2 text-left border-1 border-gray-600 space-y-2">
-        <h3 className="text-xl font-bold underline underline-offset-4">
+        <h3 className="text-xl font-bold text-left underline underline-offset-4">
           Hobby
         </h3>
         <div className="flex space-x-4">
