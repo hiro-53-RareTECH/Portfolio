@@ -50,7 +50,7 @@ const Projects = () => {
     <div className="space-y-4 w-full max-w-4xl">
       <div className="text-center space-y-4">
         <h1 className="text-4xl">Projects</h1>
-        <p className=" text-gray-400">
+        <p className="text-gray-400">
           ハッカソン（チーム開発）、個人開発で取り組んだプロジェクトを紹介します。
           <br />
           クリックすると、該当のGithubリポジトリが開きます。
