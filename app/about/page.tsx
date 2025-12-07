@@ -101,8 +101,8 @@ const About = () => {
 
       {/* My Skills */}
       <section className="space-y-4">
-        <h2 className="text-xl font-bold text-center underline underline-offset-4">
-          🛠️ My Skills
+        <h2 className="text-xl font-bold text-left underline underline-offset-4">
+          🛠️ My Skills Radar
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <SkillRadarCard
