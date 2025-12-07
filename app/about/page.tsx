@@ -53,7 +53,7 @@ const About = () => {
                   height={20}
                 />
                 <Link
-                  className="text-blue-400"
+                  className="hover:underline text-blue-400"
                   href="https://github.com/hiro-53-RareTECH"
                 >
                   github.com/hiro-53-RareTECH
@@ -67,14 +67,13 @@ const About = () => {
                   height={20}
                 />
                 <Link
-                  className="text-blue-400"
+                  className="hover:underline text-blue-400"
                   href="https://qiita.com/hiro_53"
                 >
                   qiita.com/hiro_53
                 </Link>
               </li>
             </ul>
-            <p></p>
           </div>
         </section>
 
