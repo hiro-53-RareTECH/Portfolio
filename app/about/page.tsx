@@ -13,10 +13,10 @@ const labelsFrontend = [
   "Next.js",
   "Tailwind",
 ];
-const valuesFrontend = [2, 2, 1, 1, 1, 1];
+const valuesFrontend = [3, 2, 1, 1, 1, 1];
 
 const labelsBackend = ["Python", "Flask", "Django", "MySQL", "", ""];
-const valuesBackend = [2, 2, 2, 2, 0, 0];
+const valuesBackend = [3, 3, 2, 2, 0, 0];
 
 const labelsDevOps = [
   "Linux",
@@ -26,7 +26,7 @@ const labelsDevOps = [
   "Vim",
   "AWS",
 ];
-const valuesDevOps = [2, 2, 2, 2, 2, 2];
+const valuesDevOps = [3, 3, 3, 3, 2, 3];
 
 const About = () => {
   return (
