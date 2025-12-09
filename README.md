@@ -1,6 +1,52 @@
+# ✨ Portfolio
+自身の経歴、習得技術、制作物がわかるようポートフォリオを作成した。<br>
+ポートフォリオを閲覧することで、経歴、内面、制作物一覧等がわかるようにした。<br>
+ポートフォリオの「Projects」にハッカソン（チーム開発）、個人開発で作成した制作物が複数あり、クリックするとGitHubのリポジトリに遷移する。<br>
+
+## URL
+https://hiro-portfolio.site/
+
+## 📚 目次
+
+
+## 背景
+企業の採用担当者は、時間が限られている中で、自社に合う人材か否かを見極める必要があると推察した。<br>
+また、自身の制作物のGitHubリンクを企業へ公開するだけでは、企業側の確認・判断のコストが大きいと考えた。<br>
+よって、自身の「内面、スキル、制作物」等を集約し、企業側の確認・判断のコストを下げるため、ポートフォリオをWeb上に公開することとした。<br>
+
+## ターゲット
+- 企業の採用担当者
+
+## 使用技術
+本ポートフォリオは静的ファイルで構成されており、カスタムドメインを取得し、Web上に公開している。<br>
+よって、主要使用技術はフロントエンドおよびインフラであり、以下のとおり示す。
+
+| **カテゴリ** | **技術** |
+| --- | --- |
+| フロントエンド | React 19.2.0 / Next.js(APP Router) 16.0.7 / Tailwindcss / TypeScript |
+| インフラ | Vercel |
+| その他 | Canva / GitHub |
+
+## 技術選定理由
+高速レスポンスによりユーザービリティの向上を図るため、SSGを有する**Next.js**を採用した。<br>
+また、Next.jsとVercelを使用することで、高速デプロイと自動ビルド・デプロイを可能とし、ポートフォリオの制作から公開までの期間の短縮を図るとともに保守性・運用性の向上を図った。<br>
+本ポートフォリオは、DBと連携した複雑な処理ないが、自身の学習目的のため、**Typescript**を使用した。<br>
+
+## 画面設計
+
+
+## ディレクトリ・ファイル構成
+ディレクトリ・ファイル構成を以下のとおり示す。
+
+
+
+## 開発環境確認手順
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+### Getting Started
 
 First, run the development server:
 
@@ -20,7 +66,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+### Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -28,9 +74,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
