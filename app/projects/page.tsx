@@ -4,11 +4,11 @@ import Card from "../components/projects/Card";
 
 const hackathonProjects = [
   {
-    img: "/projects/comming-soon.png",
-    title: "未定",
-    url: "https://github.com/hiro-53-RareTECH",
+    img: "/projects/logpon.png",
+    title: "ログぽん",
+    url: "https://github.com/hiro-53-RareTECH/logpon",
     term: "2026/1/～2026/2（2ヶ月）",
-    description: "次回のハッカソンでアプリを作成予定です。",
+    description: "学習の流れを作り、努力を見える化するアプリです。学習記録（ログ）をぽんぽんと手軽に記録できるように「ログぽん」と命名しました。ポモドーロタイマーのように「集中」と「休憩・リフレッシュ」を交互に行うことができ、タイマー時間を自由に設定できます。",
   },
   {
     img: "/projects/kajimaru.png",
