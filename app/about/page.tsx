@@ -11,12 +11,12 @@ const labelsFrontend = [
   "TypeScript",
   "React",
   "Next.js",
-  "Tailwind",
+  "Tailwind CSS",
 ];
 const valuesFrontend = [3, 2, 1, 1, 1, 1];
 
-const labelsBackend = ["Python", "Flask", "Django", "MySQL", "", ""];
-const valuesBackend = [3, 3, 2, 2, 0, 0];
+const labelsBackend = ["Python", "Flask", "Django", "MySQL", "Java", "PostgreSQL"];
+const valuesBackend = [3, 3, 2, 2, 1, 1];
 
 const labelsDevOps = [
   "Linux",
