@@ -62,7 +62,7 @@ export default function Home() {
                 </th>
                 <td className="border border-gray-600 px-4 py-2 text-left">
                   HTML / CSS / JavaScript / TypeScript / React / Next.js /
-                  Tailwind
+                  Tailwind CSS
                 </td>
               </tr>
               <tr>
@@ -70,7 +70,7 @@ export default function Home() {
                   Backend
                 </th>
                 <td className="border border-gray-600 px-4 py-2 text-left">
-                  Python / Flask / Django / MySQL
+                  Python / Flask / Django / MySQL / Java / PostgreSQL
                 </td>
               </tr>
               <tr>
